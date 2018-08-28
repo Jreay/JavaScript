@@ -58,3 +58,10 @@ let json = {
     [a+b]:'撒把'
 }
 console.log(json.abb)
+
+// module.exports = {
+//     a :123
+// }
+
+var cc = 123;
+module.exports = cc;
