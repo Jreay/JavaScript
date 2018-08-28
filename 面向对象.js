@@ -38,9 +38,9 @@ an.eat();
 an.getAge();
 an.Man();
 
-console.log = function () {
-    console.error(123);
-};
+// console.log = function () {
+//    console.error(123);
+// };
 // Window.prototype.aa = function () {
 //     console.log('我是扩展的方法');
 // }
@@ -50,3 +50,11 @@ console.log(12);
 //TODO    console.log()
 console.error(123);
 //TODO
+console.log(parseInt(1123.1));
+console.log(Number.parseInt(1123.456));
+
+let a = 'ab',b = 'b';
+let json = {
+    [a+b]:'撒把'
+}
+console.log(json.abb)
