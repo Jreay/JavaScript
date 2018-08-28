@@ -22,7 +22,7 @@ function Animal(name,age) {
 }
 Animal.prototype = new Person();//继承父类的实例
 
-
+//TODO    console.log()
 var sp = new Person("猪精",22);
 console.log(sp.name);
 console.log(sp.age);
@@ -38,4 +38,14 @@ an.eat();
 an.getAge();
 an.Man();
 
-
+console.log = function () {
+    console.error(123);
+};
+// Window.prototype.aa = function () {
+//     console.log('我是扩展的方法');
+// }
+//
+// aa();
+console.log(12);
+//TODO    console.log()
+console.error(123);
