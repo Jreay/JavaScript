@@ -49,3 +49,4 @@ console.log = function () {
 console.log(12);
 //TODO    console.log()
 console.error(123);
+//TODO
