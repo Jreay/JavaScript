@@ -1,4 +1,5 @@
 function Person(name,age) {
+    this.sex = 'Man';
     this.name = name;
     this.age = age;
     this.eat = function() {
@@ -7,13 +8,13 @@ function Person(name,age) {
     this.getAge = function () {
         console.log(this.name+"今年"+this.age);
     }
-}
+};
 
 
 //通过prototype我们还可以很方便的扩展系统对象
 Person.prototype.Man = function () {
         console.log(this.name + "吃完了");
-}
+};
 
 
 function Animal(name,age) {
@@ -38,14 +39,7 @@ an.eat();
 an.getAge();
 an.Man();
 
-// console.log = function () {
-//    console.error(123);
-// };
-// Window.prototype.aa = function () {
-//     console.log('我是扩展的方法');
-// }
-//
-// aa();
+
 console.log(12);
 //TODO    console.log()
 console.error(123);
@@ -56,12 +50,9 @@ console.log(Number.parseInt(1123.456));
 let a = 'ab',b = 'b';
 let json = {
     [a+b]:'撒把'
-}
-console.log(json.abb)
+};
+json[b+a]  = "jaljdlj";
+console.log(json.abb);
+console.log(json.bab);
 
-// module.exports = {
-//     a :123
-// }
 
-var cc = 123;
-module.exports = cc;

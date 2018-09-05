@@ -1,0 +1,17 @@
+interface LabelledValue {
+    label:string;
+}
+
+function printLabel(labelledObj:LabelledValue) {
+    console.log(labelledObj.label);
+}
+
+let myObj = {size:10,label:"Size 10 Object"};
+printLabel(myObj);
+
+
+function printString(str:String) {
+    console.log(str);
+}
+let str = "";
+printString(str);
