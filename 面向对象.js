@@ -39,6 +39,7 @@ an.eat();
 an.getAge();
 an.Man();
 
+console.error(an instanceof Person);
 
 console.log(12);
 //TODO    console.log()
